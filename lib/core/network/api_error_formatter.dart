@@ -6,13 +6,9 @@ String formatAnyApiError(Object error) {
   return error.toString();
 }
 
-/// User-visible API error text (status + message + validation lines).
+/// User-visible API error text (message + validation lines; no HTTP status in UI).
 String formatApiException(ApiException e) {
-  final parts = <String>[];
-  if (e.statusCode != null) {
-    parts.add('Error ${e.statusCode}');
-  }
-  parts.add(e.message);
+  final parts = <String>[e.message];
   if (e.validationErrors.isNotEmpty) {
     parts.addAll(e.validationErrors);
   }

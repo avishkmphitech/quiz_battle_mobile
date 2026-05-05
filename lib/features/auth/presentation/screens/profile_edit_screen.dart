@@ -89,7 +89,7 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
         context.pop();
       }
     } catch (e) {
-      if (mounted) showAppErrorSnackBar(context, e.toString());
+      if (mounted) showAppErrorSnackBar(context, e);
     } finally {
       if (mounted) setState(() => _loading = false);
     }
