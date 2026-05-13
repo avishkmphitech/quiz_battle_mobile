@@ -55,7 +55,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '000000000000',
     projectId: 'replace-with-your-project-id',
     storageBucket: 'replace-with-your-project-id.appspot.com',
-    iosBundleId: 'com.quiz.battle',
+    iosBundleId: 'com.example.quiz_battle',
   );
 
   static const FirebaseOptions web = FirebaseOptions(

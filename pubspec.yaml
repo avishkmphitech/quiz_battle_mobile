@@ -36,8 +36,7 @@ flutter:
 
 flutter_launcher_icons:
   android: true
-  # iOS host folder not present in this workspace; enable when `ios/` exists.
-  ios: false
+  ios: true
   web:
     generate: true
     image_path: assets/branding/app_logo.png
